@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesca Ourinhos</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2c3e50">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #eef6f8;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>🎣 Pesca em Ourinhos</h1>
+
+  <div class="card">
+    <h3>Horários Solunares - Sábado</h3>
+    <ul>
+      <li><b>Janela MAIOR 1:</b> 01:00 – 03:00</li>
+      <li><b>Janela MAIOR 2:</b> 10:22 – 12:22</li>
+      <li><b>Janela MENOR 1:</b> 04:56 – 05:56</li>
+      <li><b>Janela MENOR 2:</b> 16:52 – 17:52</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Clima esperado</h3>
+    <p>Céu limpo ao amanhecer 🌤️ — ideal para pegar o pico das 5h.</p>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log("Service Worker registrado!"));
+    }
+  </script>
+</body>
+</html>
